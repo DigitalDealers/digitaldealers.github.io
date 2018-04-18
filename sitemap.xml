@@ -16,6 +16,9 @@
 <loc>https://nicksav.github.io/docs/4.0/extend/approach/</loc>
 </url>
 <url>
+<loc>https://nicksav.github.io/docs/1.0/how-to/apps/</loc>
+</url>
+<url>
 <loc>https://nicksav.github.io/docs/1.0/platform-overview/b2b/</loc>
 </url>
 <url>
@@ -26,6 +29,9 @@
 </url>
 <url>
 <loc>https://nicksav.github.io/docs/4.0/utilities/borders/</loc>
+</url>
+<url>
+<loc>https://nicksav.github.io/docs/1.0/how-to/bots/</loc>
 </url>
 <url>
 <loc>https://nicksav.github.io/docs/4.0/about/brand/</loc>
@@ -76,6 +82,9 @@
 <loc>https://nicksav.github.io/docs/4.0/getting-started/contents/</loc>
 </url>
 <url>
+<loc>https://nicksav.github.io/docs/1.0/how-to/data-framework/</loc>
+</url>
+<url>
 <loc>https://nicksav.github.io/docs/1.0/platform-overview/data-platform/</loc>
 </url>
 <url>
@@ -109,6 +118,9 @@
 <loc>https://nicksav.github.io/docs/4.0/components/forms/</loc>
 </url>
 <url>
+<loc>https://nicksav.github.io/docs/1.0/how-to/forms/</loc>
+</url>
+<url>
 <loc>https://nicksav.github.io/docs/4.0/layout/grid/</loc>
 </url>
 <url>
@@ -124,10 +136,10 @@
 <loc>https://nicksav.github.io/</loc>
 </url>
 <url>
-<loc>https://nicksav.github.io/docs/4.0/examples/</loc>
+<loc>https://nicksav.github.io/docs/4.0/extend/</loc>
 </url>
 <url>
-<loc>https://nicksav.github.io/docs/4.0/extend/</loc>
+<loc>https://nicksav.github.io/docs/4.0/examples/</loc>
 </url>
 <url>
 <loc>https://nicksav.github.io/docs/4.0/components/input-group/</loc>
@@ -149,6 +161,9 @@
 </url>
 <url>
 <loc>https://nicksav.github.io/docs/4.0/components/list-group/</loc>
+</url>
+<url>
+<loc>https://nicksav.github.io/docs/1.0/how-to/main-configuration/</loc>
 </url>
 <url>
 <loc>https://nicksav.github.io/docs/4.0/layout/media-object/</loc>
@@ -203,6 +218,9 @@
 </url>
 <url>
 <loc>https://nicksav.github.io/docs/4.0/components/scrollspy/</loc>
+</url>
+<url>
+<loc>https://nicksav.github.io/docs/1.0/how-to/security/</loc>
 </url>
 <url>
 <loc>https://nicksav.github.io/docs/1.0/architecture/security/</loc>
