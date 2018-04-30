@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="In this menu you can configure and add the database connections that will be used on the platform.">
+<meta name="description" content="In this menu you can configure and add the data connections, data sets and reports that will be used on the platform.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Jekyll v3.6.2">
 
@@ -44,16 +44,16 @@
 <meta name="twitter:site" content="@getbootstrap">
 <meta name="twitter:creator" content="@getbootstrap">
 <meta name="twitter:title" content="Data Framework">
-<meta name="twitter:description" content="In this menu you can configure and add the database connections that will be used on the platform.">
-<meta name="twitter:image" content="https://nicksav.github.io/assets/brand/bootstrap-social-logo.png">
+<meta name="twitter:description" content="In this menu you can configure and add the data connections, data sets and reports that will be used on the platform.">
+<meta name="twitter:image" content="http://0.0.0.0:9001/assets/brand/bootstrap-social-logo.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="https://nicksav.github.io/docs/1.0/how-to/data-framework/">
+<meta property="og:url" content="http://0.0.0.0:9001/docs/1.0/how-to/data-framework/">
 <meta property="og:title" content="Data Framework">
-<meta property="og:description" content="In this menu you can configure and add the database connections that will be used on the platform.">
+<meta property="og:description" content="In this menu you can configure and add the data connections, data sets and reports that will be used on the platform.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="http://nicksav.github.io/assets/brand/bootstrap-social.png">
-<meta property="og:image:secure_url" content="https://nicksav.github.io/assets/brand/bootstrap-social.png">
+<meta property="og:image" content="http://0.0.0.0:9001/assets/brand/bootstrap-social.png">
+<meta property="og:image:secure_url" content="http://0.0.0.0:9001/assets/brand/bootstrap-social.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -210,12 +210,22 @@
 <ul>
 <li class="toc-entry toc-h3"><a href="#connections">Connections</a>
 <ul>
-<li class="toc-entry toc-h4"><a href="#add-sql-connection">Add SQL Connection</a></li>
-<li class="toc-entry toc-h4"><a href="#add-partstore-connection">Add PartStore Connection</a></li>
+<li class="toc-entry toc-h4"><a href="#new-connection">New Connection</a></li>
+<li class="toc-entry toc-h4"><a href="#edit-connection">Edit Connection</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h3"><a href="#data-sets">Data Sets</a></li>
-<li class="toc-entry toc-h3"><a href="#reports">Reports</a></li>
+<li class="toc-entry toc-h3"><a href="#data-sets">Data Sets</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#new-data-set">New Data Set</a></li>
+<li class="toc-entry toc-h4"><a href="#edit-data-set">Edit Data Set</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#reports">Reports</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#new-report">New Report</a></li>
+<li class="toc-entry toc-h4"><a href="#edit-report">Edit Report</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -224,8 +234,10 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">Data Framework</h1>
-          <p class="bd-lead">In this menu you can configure and add the database connections that will be used on the platform.</p>
-          <h2 id="quick-start">Quick start</h2>
+          <p class="bd-lead">In this menu you can configure and add the data connections, data sets and reports that will be used on the platform.</p>
+          <p><img src="/assets/img/docs/how-to/data-framework/frameworkMenu.png" class="rounded" alt="img" /></p>
+
+<h2 id="quick-start">Quick start</h2>
 
 <ol>
   <li><a href="#connections">Connections</a></li>
@@ -235,83 +247,311 @@
 
 <h3 id="connections">Connections</h3>
 
-<p>Connections to on-premises resources require Microsoft Hybrid Connection Manager Installed and Configured. And you can download the hybrid connection manager here.</p>
+<p>In Connections page, you can configure the data connections to be used for the platform.</p>
 
-<p>You have 2 options to add a connection which you will find by clicking the Add button in the upper right corner.</p>
+<p>And,connections to on-premises resources require Microsoft Hybrid Connection Manager Installed and Configured.<a href="https://docs.microsoft.com/en-us/azure/app-service/app-service-hybrid-connections#hybrid-connection-manager">Read the hybrid connection manager here</a></p>
 
-<h4 id="add-sql-connection">Add SQL Connection</h4>
+<h4 id="new-connection">New Connection</h4>
 
-<p>The following information must be entered:</p>
+<p>To set up a connection, you have two options when you click the Add button in the upper right corner.</p>
 
-<ul>
-  <li>Connection Name</li>
-  <li>Type: MS SQL Server / Oracle SQL Server / MySQL Server</li>
-  <li>User Name</li>
-  <li>Password</li>
-  <li>Server Name</li>
-  <li>Port</li>
-  <li>Database Name</li>
-  <li>On Premises Resource</li>
-</ul>
+<h5 id="add-sql-connection">Add SQL Connection</h5>
 
-<h4 id="add-partstore-connection">Add PartStore Connection</h4>
+<p><img src="/assets/img/docs/how-to/data-framework/newSqlConn.png" class="rounded" alt="img" /></p>
 
 <p>The following information must be entered:</p>
 
 <ul>
-  <li>Connection Name</li>
-  <li>User Name</li>
-  <li>Password</li>
-  <li>Nonce</li>
-  <li>Web Service Url</li>
-  <li>Web Service Hostname</li>
-  <li>Port</li>
-  <li>Declare Code</li>
-  <li>On Premises Resource:</li>
+  <li>Connection Name : Name for the connection</li>
+  <li>Type : Select one of the below option based on SQL type
+    <ul>
+      <li>MS SQL Server</li>
+      <li>Oracle SQL Server</li>
+      <li>MySQL Server</li>
+    </ul>
+  </li>
+  <li>User Name : The account have the access to the database server</li>
+  <li>Password :  The password for the account</li>
+  <li>Server Name : The database server for the connection</li>
+  <li>Port : The database server port for the connection</li>
+  <li>Database Name : The database name for the connection</li>
+  <li>On Premises Resource : Enable it if the server host on premises</li>
 </ul>
+
+<h5 id="add-partstore-connection">Add PartStore Connection</h5>
+
+<p><img src="/assets/img/docs/how-to/data-framework/newPSConn.png" class="rounded" alt="img" /></p>
+
+<p>The following information must be entered:</p>
+
+<ul>
+  <li>Connection Name : Name for the connection</li>
+  <li>User Name : The account have the access to the part store web service</li>
+  <li>Password : The password for the account</li>
+  <li>Nonce : (Update later)</li>
+  <li>Web Service Url : The Url for the part store web service</li>
+  <li>Web Service Hostname : The host for the part store web service</li>
+  <li>Port : The port for the part store web service</li>
+  <li>Declare Code : CAT dealer code</li>
+  <li>On Premises Resource :  Enable it host on premises</li>
+</ul>
+
+<h4 id="edit-connection">Edit Connection</h4>
+
+<p>A connection grid to show all connections you have created. At upper section, you can type in search box to filter the results.</p>
+
+<p><img src="/assets/img/docs/how-to/data-framework/connGrid.png" class="rounded" alt="img" /></p>
+
+<p><img src="/assets/img/docs/how-to/data-framework/connDetails.png" class="rounded" alt="img" /></p>
+
+<p>You can go the the details by clicking the row in connections grid, in detail page you are able to test/edit this connection.</p>
 
 <h3 id="data-sets">Data Sets</h3>
 
-<p>In this menu you can set up and add data sets that will be used on the platform.</p>
+<p>In Data Sets page, you can configure data set to be used for the platform.</p>
 
-<p>To set up a new data set you must first create it by clicking the Add Data Set button in the upper right corner and entering the following information:</p>
+<h4 id="new-data-set">New Data Set</h4>
+
+<p><img src="/assets/img/docs/how-to/data-framework/newDs.png" class="rounded" alt="img" /></p>
+
+<p>To set up a new data set, the first step is to create it by clicking the Add Data Set button in the upper right corner and entering the following information:</p>
 
 <ul>
-  <li>Connection: You must choose a connection created in the Data Framework menu - Connections</li>
-  <li>Name</li>
+  <li>Connection : <a href="#connections">Connection</a> the data set to use</li>
+  <li>Name : Data set name</li>
   <li>Update Type
     <ul>
-      <li>Full: Load the entire table always, truncate and load</li>
-      <li>Incremental: Lad only deltas (new / updated records)</li>
-      <li>Live: Makes the query direct to the table in its location (without moving data to the platform in the cloud)</li>
+      <li>Full : Load the entire data set always, truncate all and re-populate all to cloud</li>
+      <li>Incremental : Load only deltas (new / updated records) to cloud</li>
+      <li>Live : Make a direct query to the data table in its location (usually used for the data hosted on cloud)</li>
     </ul>
   </li>
-  <li>Refresh: Time to refresh</li>
+  <li>Refresh: Recurrence for scheduled job to refresh this data set</li>
 </ul>
 
-<p>After you create it you can enter the SQL Query in which the data set will be based</p>
+<h4 id="edit-data-set">Edit Data Set</h4>
 
-<p>You will also have 3 tabs to modify the dataset settings:</p>
+<p>After data set created, you need go the the details page to do further configuration by clicking the row in data sets grid.</p>
+
+<p><img src="/assets/img/docs/how-to/data-framework/editDsSQL.png" class="rounded" alt="img" /></p>
+
+<p>At left side, there is SQL query editor for you to define data set by using SQL select statement, <a href="#sql-query-editor">find more here</a></p>
+
+<p>At right side, there are tabs for you to do configurations for this data set, <a href="#data-set-configuration-tabs">find more here</a></p>
+
+<p>In button section, you can edit the data set, validate SQL query and manually run data refresh directly by clicking run button.</p>
+
+<p>In lower section, you can see data refresh history for the data set (Not available for live data set).</p>
+
+<h5 id="sql-query-editor">SQL Query Editor</h5>
+
+<p>You need to provide SQL Query to define the data set you want it to be, inlcuding</p>
 
 <ul>
-  <li>Properties</li>
-  <li>Power BI</li>
-  <li>Alerts</li>
+  <li>Source table name</li>
+  <li>Selection criteria</li>
+  <li>Column names</li>
 </ul>
 
-<p>You can also see a history of the execution of the data set in the bottom of the window</p>
+<p><a href="https://www.w3schools.com/sql/sql_select.asp">Read SQL SELECT Statement here</a></p>
+
+<p>And, you can include the following macros inside SQL Query:(* - only applied for Live Data Connections)</p>
+
+<ul>
+  <li>@app_entityNumbers</li>
+  <li>@dataset_lastExecuted</li>
+  <li>@app_le</li>
+  <li>@app_dealerid</li>
+  <li>@app_userid</li>
+  <li>*@dataset_offset</li>
+  <li>*@dataset_limit</li>
+  <li>*@dataset_query</li>
+</ul>
+
+<p>Find below SQL query examples based on different update type</p>
+
+<p>Example 1 - Full Update Type</p>
+
+<p>The column names you defined in SQL query are to be converted to SQL table column names on cloud.</p>
+
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">DECLARE</span> <span class="o">@</span><span class="n">LegalEntity</span> <span class="n">CHAR</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">=</span> <span class="s1">'A%'</span><span class="p">;</span>
+
+<span class="k">SELECT</span>  <span class="n">RECID</span> <span class="k">AS</span> <span class="p">[</span><span class="n">RecId</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">ACTIVITY</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Activity</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">DESCRIPTION</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Description</span><span class="p">]</span>
+      <span class="p">,</span> <span class="k">UPPER</span><span class="p">(</span><span class="n">DATAAREAID</span><span class="p">)</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Legal</span> <span class="n">Entity</span><span class="p">]</span>
+<span class="k">FROM</span>    <span class="n">dbo</span><span class="p">.</span><span class="n">JMGIPCACTIVITY</span>
+<span class="k">WHERE</span>   <span class="n">DATAAREAID</span> <span class="k">LIKE</span> <span class="o">@</span><span class="n">LegalEntity</span><span class="p">;</span></code></pre></figure>
+
+<p>Example 2 - Incremental Update Type</p>
+
+<p>In selection criteria, you can specify a datatime column (e.g. Modified Date Time) to compare with @dataset_lastExecuted macros for incremental update.</p>
+
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">DECLARE</span> <span class="o">@</span><span class="n">LegalEntity</span> <span class="n">CHAR</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">=</span> <span class="s1">'A%'</span><span class="p">;</span>
+
+<span class="k">SELECT</span>  <span class="n">RECID</span> <span class="k">AS</span> <span class="p">[</span><span class="n">RecId</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">PROJID</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Project</span> <span class="n">Id</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">NAME</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Project</span> <span class="n">Name</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">MODIFIEDDATETIME</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Modified</span> <span class="n">Date</span><span class="p">]</span>
+      <span class="p">,</span> <span class="k">UPPER</span> <span class="p">(</span><span class="n">DATAAREAID</span><span class="p">)</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Legal</span> <span class="n">Entity</span><span class="p">]</span>
+<span class="k">FROM</span>    <span class="n">dbo</span><span class="p">.</span><span class="n">PROJTABLE</span>
+<span class="k">WHERE</span>   <span class="n">STATUS</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="k">AND</span>     <span class="n">DATAAREAID</span> <span class="k">LIKE</span> <span class="o">@</span><span class="n">LegalEntity</span>
+<span class="k">AND</span>     <span class="n">MODIFIEDDATETIME</span> <span class="o">&gt;</span> <span class="o">@</span><span class="n">dataset_lastExecuted</span><span class="p">;</span></code></pre></figure>
+
+<p>Example 3 - Live Update Type</p>
+
+<p>In selection criteria, you can specify the column to compare with @app_entityNumbers and @app_le macros to filter the records belong to the entity specified only.</p>
+
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">SELECT</span>  <span class="p">[</span><span class="n">RecId</span><span class="p">]</span>
+      <span class="p">,</span> <span class="p">[</span><span class="n">Model</span><span class="p">]</span>
+      <span class="p">,</span> <span class="p">[</span><span class="n">Model</span> <span class="n">Description</span><span class="p">]</span>
+      <span class="p">,</span> <span class="p">[</span><span class="n">Manufacturer</span><span class="p">]</span>
+      <span class="p">,</span> <span class="p">[</span><span class="n">Customer</span> <span class="n">Purchase</span> <span class="k">Order</span> <span class="n">Number</span><span class="p">]</span> <span class="k">AS</span> <span class="p">[</span><span class="n">PO</span> <span class="n">Number</span><span class="p">]</span>
+      <span class="p">,</span> <span class="k">CONVERT</span><span class="p">(</span><span class="n">VARCHAR</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="p">[</span><span class="n">Purchase</span> <span class="k">Order</span> <span class="n">Date</span><span class="p">],</span> <span class="mi">103</span><span class="p">)</span> <span class="k">AS</span> <span class="p">[</span><span class="n">PO</span> <span class="n">Date</span><span class="p">]</span>
+      <span class="p">,</span> <span class="k">CONVERT</span><span class="p">(</span><span class="n">VARCHAR</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="p">[</span><span class="n">Estimated</span> <span class="n">Delivery</span> <span class="n">Date</span><span class="p">],</span> <span class="mi">103</span><span class="p">)</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Est</span><span class="p">.</span> <span class="n">Delivery</span><span class="p">]</span>
+      <span class="p">,</span> <span class="p">[</span><span class="k">Is</span> <span class="n">Attachment</span><span class="p">]</span>
+      <span class="p">,</span> <span class="p">[</span><span class="n">Project</span><span class="p">]</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Reference</span> <span class="n">Number</span><span class="p">]</span>
+      <span class="p">,</span> <span class="p">[</span><span class="n">Customer</span> <span class="n">Account</span><span class="p">]</span>
+      <span class="p">,</span> <span class="p">[</span><span class="n">Customer</span> <span class="n">Name</span><span class="p">]</span>
+<span class="k">FROM</span>    <span class="p">[</span><span class="n">dbo</span><span class="p">].[</span><span class="n">DataSet_ActiveEquipmentOrders</span><span class="p">]</span>
+<span class="k">WHERE</span>   <span class="p">(</span><span class="n">CONCAT</span><span class="p">(</span><span class="o">@</span><span class="n">app_entityNumbers</span><span class="p">)</span> <span class="o">=</span> <span class="s1">''</span> <span class="k">OR</span> <span class="p">[</span><span class="n">Customer</span> <span class="n">Account</span><span class="p">]</span> <span class="k">IN</span> <span class="p">(</span> <span class="o">@</span><span class="n">app_entityNumbers</span> <span class="p">))</span>
+<span class="k">AND</span>     <span class="p">(</span><span class="o">@</span><span class="n">dataset_query</span> <span class="k">IS</span> <span class="k">NULL</span> <span class="k">OR</span>  <span class="p">[</span><span class="n">Serial</span> <span class="n">Number</span><span class="p">]</span> <span class="k">LIKE</span> <span class="s1">'%'</span> <span class="o">+</span> <span class="o">@</span><span class="n">dataset_query</span> <span class="o">+</span> <span class="s1">'%'</span><span class="p">)</span>
+<span class="k">AND</span>     <span class="p">(</span><span class="o">@</span><span class="n">app_le</span> <span class="k">IS</span> <span class="k">NULL</span> <span class="k">OR</span> <span class="p">[</span><span class="n">Legal</span> <span class="n">Entity</span><span class="p">]</span> <span class="o">=</span> <span class="o">@</span><span class="n">app_le</span><span class="p">)</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="p">[</span><span class="n">RecId</span><span class="p">]</span> <span class="k">DESC</span> <span class="k">OFFSET</span> <span class="o">@</span><span class="n">dataset_offset</span> <span class="k">ROWS</span> <span class="k">FETCH</span> <span class="k">NEXT</span> <span class="o">@</span><span class="n">dataset_limit</span> <span class="k">ROWS</span> <span class="k">ONLY</span><span class="p">;</span></code></pre></figure>
+
+<p>Example 4 - Live Update Type</p>
+
+<p>In selection criteria, you can specify  @dataset_query, @dataset_offset and @dataset_limit macros to filter the records.</p>
+
+<figure class="highlight"><pre><code class="language-sql" data-lang="sql"><span class="k">SELECT</span>  <span class="n">soh</span><span class="p">.[</span><span class="n">RecId</span><span class="p">]</span> <span class="k">AS</span> <span class="n">RecId</span>
+      <span class="p">,</span> <span class="n">soh</span><span class="p">.[</span><span class="k">Order</span> <span class="n">Number</span><span class="p">]</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Reference</span> <span class="n">Number</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">soh</span><span class="p">.[</span><span class="n">Purchase</span> <span class="k">Order</span> <span class="n">Number</span><span class="p">]</span> <span class="k">AS</span> <span class="p">[</span><span class="n">PO</span> <span class="n">Number</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">soh</span><span class="p">.[</span><span class="k">Order</span> <span class="n">Status</span><span class="p">]</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Status</span><span class="p">]</span>
+      <span class="p">,</span> <span class="k">CONVERT</span> <span class="p">(</span><span class="n">VARCHAR</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="n">soh</span><span class="p">.[</span><span class="n">Sales</span> <span class="k">Order</span> <span class="n">Created</span> <span class="n">Date</span><span class="p">],</span> <span class="mi">103</span><span class="p">)</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Created</span> <span class="k">On</span><span class="p">]</span>
+      <span class="p">,</span> <span class="k">CONVERT</span> <span class="p">(</span><span class="n">VARCHAR</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="n">soh</span><span class="p">.[</span><span class="n">Customer</span> <span class="n">Need</span> <span class="k">By</span> <span class="n">Date</span><span class="p">],</span> <span class="mi">103</span><span class="p">)</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Need</span> <span class="k">by</span> <span class="n">Date</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">FORMAT</span> <span class="p">(</span>
+             <span class="p">(</span> <span class="n">COALESCE</span> <span class="p">(</span><span class="n">soh</span><span class="p">.[</span><span class="n">Total</span> <span class="n">Charges</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="n">COALESCE</span> <span class="p">(</span><span class="n">soh</span><span class="p">.[</span><span class="n">Tax</span><span class="p">],</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="n">COALESCE</span> <span class="p">(</span><span class="n">soh</span><span class="p">.[</span><span class="n">Extended</span> <span class="n">Price</span><span class="p">],</span> <span class="mi">0</span><span class="p">))</span>
+           <span class="p">,</span> <span class="s1">'#,0.00'</span><span class="p">)</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Total</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">soh</span><span class="p">.[</span><span class="n">Currency</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">FORMAT</span> <span class="p">(</span><span class="n">soh</span><span class="p">.[</span><span class="n">Extended</span> <span class="n">Price</span><span class="p">],</span> <span class="s1">'#,0.00'</span><span class="p">)</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Sub</span> <span class="n">Total</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">soh</span><span class="p">.[</span><span class="n">Invoice</span> <span class="n">Account</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">soh</span><span class="p">.[</span><span class="n">Customer</span> <span class="n">Account</span><span class="p">]</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Customer</span> <span class="n">Account</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">soh</span><span class="p">.[</span><span class="k">Order</span> <span class="k">Type</span> <span class="n">Category</span><span class="p">]</span> <span class="k">AS</span> <span class="p">[</span><span class="k">Order</span> <span class="k">Type</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">sol</span><span class="p">.[</span><span class="n">RecId</span><span class="p">]</span> <span class="k">AS</span> <span class="p">[</span><span class="n">LineRecId</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">sol</span><span class="p">.[</span><span class="n">Item</span> <span class="n">Number</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">sol</span><span class="p">.[</span><span class="n">Item</span> <span class="n">Description</span><span class="p">]</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Description</span><span class="p">]</span>
+      <span class="p">,</span> <span class="n">sol</span><span class="p">.[</span><span class="n">Line</span> <span class="n">Status</span><span class="p">]</span>
+      <span class="p">,</span> <span class="k">CONVERT</span> <span class="p">(</span><span class="n">VARCHAR</span><span class="p">(</span><span class="mi">22</span><span class="p">),</span> <span class="k">CONVERT</span> <span class="p">(</span><span class="n">DECIMAL</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">COALESCE</span> <span class="p">(</span><span class="n">sol</span><span class="p">.[</span><span class="n">Quantity</span> <span class="n">Ordered</span><span class="p">],</span> <span class="mi">0</span><span class="p">)))</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Qty</span><span class="p">.</span> <span class="n">Ordered</span><span class="p">]</span>
+      <span class="p">,</span> <span class="k">CONVERT</span> <span class="p">(</span><span class="n">VARCHAR</span><span class="p">(</span><span class="mi">22</span><span class="p">),</span> <span class="k">CONVERT</span> <span class="p">(</span><span class="n">DECIMAL</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">COALESCE</span> <span class="p">(</span><span class="n">sol</span><span class="p">.[</span><span class="n">Quantity</span> <span class="n">Delivered</span><span class="p">],</span> <span class="mi">0</span><span class="p">)))</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Qty</span><span class="p">.</span> <span class="n">Delivered</span><span class="p">]</span>
+      <span class="p">,</span> <span class="k">CONVERT</span> <span class="p">(</span><span class="n">VARCHAR</span><span class="p">(</span><span class="mi">22</span><span class="p">),</span> <span class="k">CONVERT</span> <span class="p">(</span><span class="n">DECIMAL</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">COALESCE</span> <span class="p">(</span><span class="n">sol</span><span class="p">.[</span><span class="n">Outstanding</span> <span class="n">Qantity</span><span class="p">],</span> <span class="mi">0</span><span class="p">)))</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Backorder</span> <span class="n">Qty</span><span class="p">.]</span>
+      <span class="p">,</span> <span class="k">CONVERT</span> <span class="p">(</span><span class="n">VARCHAR</span><span class="p">(</span><span class="mi">22</span><span class="p">),</span> <span class="k">CONVERT</span> <span class="p">(</span><span class="n">DECIMAL</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">COALESCE</span> <span class="p">(</span><span class="n">sol</span><span class="p">.[</span><span class="n">Extended</span> <span class="n">Price</span><span class="p">],</span> <span class="mi">0</span><span class="p">)))</span> <span class="k">AS</span> <span class="p">[</span><span class="n">Extended</span> <span class="n">Price</span><span class="p">]</span>
+<span class="k">FROM</span>    <span class="p">(</span> <span class="k">SELECT</span>    <span class="p">[</span><span class="k">Order</span> <span class="n">Number</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="n">Purchase</span> <span class="k">Order</span> <span class="n">Number</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="n">Invoice</span> <span class="n">Account</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="n">Sales</span> <span class="k">Order</span> <span class="n">Created</span> <span class="n">Date</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="n">Customer</span> <span class="n">Need</span> <span class="k">By</span> <span class="n">Date</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="k">Order</span> <span class="n">Status</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="k">Order</span> <span class="k">Type</span> <span class="n">Category</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="n">Customer</span> <span class="n">Account</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="k">Order</span> <span class="k">Class</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="n">RecId</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="n">Sales</span> <span class="k">Order</span> <span class="n">Modified</span> <span class="n">Date</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="n">Legal</span> <span class="n">Entity</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="n">Total</span> <span class="n">Charges</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="n">Sales</span> <span class="n">Origin</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="n">Currency</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="n">Tax</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="n">Extended</span> <span class="n">Price</span><span class="p">]</span>
+                  <span class="p">,</span> <span class="p">[</span><span class="n">HashJoin</span><span class="p">]</span>
+          <span class="k">FROM</span>      <span class="p">[</span><span class="n">dbo</span><span class="p">].[</span><span class="n">DataSet_SalesOrderHeader</span><span class="p">]</span>
+          <span class="k">WHERE</span>     <span class="p">[</span><span class="k">Order</span> <span class="n">Status</span><span class="p">]</span> <span class="k">IN</span> <span class="p">(</span> <span class="s1">'Pending'</span><span class="p">,</span> <span class="s1">'Shipped'</span> <span class="p">)</span>
+          <span class="k">AND</span>       <span class="p">(</span> <span class="n">CONCAT</span><span class="p">(</span><span class="o">@</span><span class="n">app_entityNumbers</span><span class="p">)</span> <span class="o">=</span> <span class="s1">''</span> <span class="k">OR</span>   <span class="p">[</span><span class="n">Invoice</span> <span class="n">Account</span><span class="p">]</span> <span class="k">IN</span> <span class="p">(</span> <span class="o">@</span><span class="n">app_entityNumbers</span> <span class="p">))</span>
+          <span class="k">AND</span>
+                    <span class="p">(</span>   <span class="o">@</span><span class="n">dataset_query</span> <span class="k">IS</span> <span class="k">NULL</span>
+                   <span class="k">OR</span>
+                        <span class="p">(</span>   <span class="p">[</span><span class="k">Order</span> <span class="n">Number</span><span class="p">]</span> <span class="k">LIKE</span> <span class="o">@</span><span class="n">dataset_query</span> <span class="o">+</span> <span class="s1">'%'</span>
+                       <span class="k">OR</span>   <span class="p">[</span><span class="k">Order</span> <span class="n">Status</span><span class="p">]</span> <span class="k">LIKE</span> <span class="o">@</span><span class="n">dataset_query</span> <span class="o">+</span> <span class="s1">'%'</span>
+                       <span class="k">OR</span>   <span class="p">[</span><span class="n">Purchase</span> <span class="k">Order</span> <span class="n">Number</span><span class="p">]</span> <span class="k">LIKE</span> <span class="o">@</span><span class="n">dataset_query</span> <span class="o">+</span> <span class="s1">'%'</span> <span class="p">))</span>
+          <span class="k">AND</span>       <span class="p">(</span> <span class="o">@</span><span class="n">app_le</span> <span class="k">IS</span> <span class="k">NULL</span> <span class="k">OR</span> <span class="p">[</span><span class="n">Legal</span> <span class="n">Entity</span><span class="p">]</span> <span class="o">=</span> <span class="o">@</span><span class="n">app_le</span> <span class="p">)</span>
+          <span class="k">ORDER</span> <span class="k">BY</span>  <span class="p">[</span><span class="n">RecId</span><span class="p">]</span> <span class="k">DESC</span> <span class="k">OFFSET</span> <span class="o">@</span><span class="n">dataset_offset</span> <span class="k">ROWS</span> <span class="k">FETCH</span> <span class="k">NEXT</span> <span class="o">@</span><span class="n">dataset_limit</span> <span class="k">ROWS</span> <span class="k">ONLY</span> <span class="p">)</span> <span class="k">AS</span> <span class="n">soh</span>
+        <span class="k">LEFT</span> <span class="k">JOIN</span> <span class="p">[</span><span class="n">dbo</span><span class="p">].[</span><span class="n">DataSet_SalesOrderLine</span><span class="p">]</span> <span class="k">AS</span> <span class="n">sol</span>
+        <span class="k">ON</span>    <span class="n">sol</span><span class="p">.[</span><span class="n">Sales</span> <span class="n">ID</span><span class="p">]</span> <span class="o">=</span> <span class="n">soh</span><span class="p">.[</span><span class="k">Order</span> <span class="n">Number</span><span class="p">]</span>
+        <span class="k">AND</span>   <span class="n">sol</span><span class="p">.[</span><span class="n">DATAAREAID</span><span class="p">]</span> <span class="o">=</span> <span class="n">soh</span><span class="p">.[</span><span class="n">Legal</span> <span class="n">Entity</span><span class="p">]</span>
+        <span class="k">AND</span>   <span class="n">sol</span><span class="p">.[</span><span class="n">PARTITION</span><span class="p">]</span> <span class="o">=</span> <span class="n">soh</span><span class="p">.[</span><span class="n">PARTITION</span><span class="p">];</span></code></pre></figure>
+
+<h5 id="data-set-configuration-tabs">Data Set Configuration Tabs</h5>
+
+<p>Generally, you can see below tabs (They would looks a little bit different based on their update type).</p>
+
+<ul>
+  <li>Properties : Data set properies and enable button for data refresh</li>
+  <li>Power BI : (Update later)</li>
+  <li>Alerts : You can proivide email addresses here to receive alters when data refresh jobs failed</li>
+</ul>
+
+<h6 id="full-update-type">Full Update Type</h6>
+
+<p><img src="/assets/img/docs/how-to/data-framework/fullUpdateDs.png" class="rounded" alt="img" /></p>
+
+<ul>
+  <li>Enabled
+    <ul>
+      <li>Yes, create a data refresh scheduled job for the data set.</li>
+      <li>No - remove the scheduled job</li>
+    </ul>
+  </li>
+  <li>Connection :  Connection the data set to use</li>
+  <li>Update Type : Full</li>
+  <li>Sort Order : (Update later)</li>
+  <li>Refresh Options : Recurrence time for data refresh</li>
+</ul>
+
+<h6 id="incremental-update-type">Incremental Update Type</h6>
+
+<p><img src="/assets/img/docs/how-to/data-framework/incrementalUpdateDs.png" class="rounded" alt="img" /></p>
+
+<ul>
+  <li>Incremental Column : The column for incremental update (e.g. Modified Date)</li>
+  <li>INcremental Key : The key for Incremental update (e.g. RecId)</li>
+</ul>
+
+<h6 id="live-update-type">Live Update Type</h6>
+
+<p><img src="/assets/img/docs/how-to/data-framework/liveUpdateDs.png" class="rounded" alt="img" /></p>
+
+<p>For Live data set, there is no PowerBI and Alerts tabs but a Live Connection tab which inlcuds,</p>
+
+<ul>
+  <li>Header Key : Based on Sql query provided, the columns after this key are belong to header (e.g. Sales Order Header)</li>
+  <li>Line Item Key : Based on Sql query provided, the columns after this key are belong to line (e.g. Sales Order Line)</li>
+  <li>Grid Columns : (Update later)</li>
+</ul>
 
 <h3 id="reports">Reports</h3>
 
-<p>In this menu you can configure and paste the reports that will appear in the Reports menu.</p>
+<p>In Reports page, you can configure reports to be used for the platform.</p>
 
-<p>To add a new report you must click on the Add Report button in the upper right corner, a window will appear in which you must enter:</p>
+<h4 id="new-report">New Report</h4>
+
+<p><img src="/assets/img/docs/how-to/data-framework/newReport.png" class="rounded" alt="img" /></p>
+
+<p>To add a new report you can click the Add Report button in the upper right corner, the following information must be entered:</p>
+
 <ul>
-  <li>Report Description</li>
-  <li>Report File: PBIX file or powerBI file</li>
-  <li>Sort Order</li>
+  <li>Report Description : Description of the report</li>
+  <li>Report File : Power BI file to be uploaded</li>
+  <li>Sort Order : The sort of this report item inside of report menu</li>
   <li>RLs (Row Level Security): you can only see what is related to the customer account that you have set. Only affects the customer, the admin can see everything</li>
 </ul>
+
+<h4 id="edit-report">Edit Report</h4>
+
+<p>A report grid to show all reports you have created. At upper section, you can type in search box to filter the results.</p>
+
+<p><img src="/assets/img/docs/how-to/data-framework/reportDetails.png" class="rounded" alt="img" /></p>
+
+<p>You can go the the details by clicking the row in reports grid, in detail page you are able to edit this report item.</p>
 
         </main>
       </div>
